@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Prozess- und Roadmap-Visualisierung</title>
+  <desc id="desc">Eine strukturierte Roadmap mit Analyse, Priorisierung und Umsetzung.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#edf6f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="820" rx="34" fill="#f4e8dc"/>
+  <rect x="86" y="72" width="1028" height="676" rx="30" fill="url(#paper)" stroke="#d8e5e8"/>
+  <text x="138" y="148" fill="#122025" font-family="Arial, sans-serif" font-size="38" font-weight="800">Digitalisierungs-Roadmap</text>
+  <text x="138" y="190" fill="#5c6a70" font-family="Arial, sans-serif" font-size="22">Von Medienbrüchen zu klaren Abläufen</text>
+  <path d="M176 414h848" stroke="#d8e5e8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M176 414h560" stroke="#0b7189" stroke-width="14" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif">
+    <circle cx="176" cy="414" r="42" fill="#0b7189"/>
+    <text x="164" y="426" fill="#fff" font-size="34" font-weight="800">1</text>
+    <text x="118" y="508" fill="#122025" font-size="26" font-weight="800">Analyse</text>
+    <text x="94" y="546" fill="#5c6a70" font-size="20">Abläufe verstehen</text>
+    <circle cx="456" cy="414" r="42" fill="#0b7189"/>
+    <text x="444" y="426" fill="#fff" font-size="34" font-weight="800">2</text>
+    <text x="386" y="508" fill="#122025" font-size="26" font-weight="800">Priorisieren</text>
+    <text x="372" y="546" fill="#5c6a70" font-size="20">Nutzen bewerten</text>
+    <circle cx="736" cy="414" r="42" fill="#0b7189"/>
+    <text x="724" y="426" fill="#fff" font-size="34" font-weight="800">3</text>
+    <text x="672" y="508" fill="#122025" font-size="26" font-weight="800">Umsetzen</text>
+    <text x="646" y="546" fill="#5c6a70" font-size="20">Projekt steuern</text>
+    <circle cx="1016" cy="414" r="42" fill="#fff" stroke="#0b7189" stroke-width="8"/>
+    <text x="1004" y="426" fill="#0b7189" font-size="34" font-weight="800">4</text>
+    <text x="946" y="508" fill="#122025" font-size="26" font-weight="800">Optimieren</text>
+    <text x="922" y="546" fill="#5c6a70" font-size="20">Wirkung messen</text>
+  </g>
+  <rect x="138" y="614" width="924" height="68" rx="16" fill="#10242b"/>
+  <text x="174" y="657" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Klares Ziel: weniger manuelle Arbeit, bessere Daten, messbarer Nutzen.</text>
+</svg>
