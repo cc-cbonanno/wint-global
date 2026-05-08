@@ -1,4 +1,4 @@
-# Deployment: GitHub Pages + wint.global
+# Deployment: GitHub Pages + bonanno-consulting.com
 
 Diese Website ist statisch und kann direkt über GitHub Pages gehostet werden.
 
@@ -61,14 +61,14 @@ git push -u origin main
 4. Custom domain eintragen:
 
 ```txt
-wint.global
+bonanno-consulting.com
 ```
 
-Die Datei `CNAME` ist bereits im Projekt enthalten und enthält ebenfalls `wint.global`.
+Die Datei `CNAME` ist bereits im Projekt enthalten und enthält ebenfalls `bonanno-consulting.com`.
 
-## 4. DNS für wint.global setzen
+## 4. DNS für bonanno-consulting.com setzen
 
-Beim DNS-Anbieter von `wint.global` diese Records setzen:
+Beim DNS-Anbieter von `bonanno-consulting.com` diese Records setzen:
 
 ```txt
 A     @     185.199.108.153
@@ -81,7 +81,7 @@ AAAA  @     2606:50c0:8002::153
 AAAA  @     2606:50c0:8003::153
 ```
 
-Optional für `www.wint.global`:
+Optional für `www.bonanno-consulting.com`:
 
 ```txt
 CNAME  www  DEIN-GITHUB-USER.github.io
