@@ -1,4 +1,4 @@
-# Deployment: GitHub Pages + bonanno-consulting.com
+# Deployment: GitHub Pages + Weiterleitung von bonanno-consulting.com
 
 Diese Website ist statisch und kann direkt über GitHub Pages gehostet werden.
 
@@ -58,40 +58,37 @@ git push -u origin main
    - Branch: `main`
    - Folder: `/root`
 3. Speichern.
-4. Custom domain eintragen:
+4. Keine Custom Domain in GitHub Pages eintragen, wenn `bonanno-consulting.com` per Weiterleitung beim Hoster liegt.
+
+Die GitHub-Pages-Ziel-URL lautet:
 
 ```txt
-bonanno-consulting.com
+https://cc-cbonanno.github.io/wint-global/
 ```
 
-Die Datei `CNAME` ist bereits im Projekt enthalten und enthält ebenfalls `bonanno-consulting.com`.
+## 4. Weiterleitung bei Wint einrichten
 
-## 4. DNS für bonanno-consulting.com setzen
+Wenn DNS nicht auf GitHub Pages zeigen kann, im Wint-Panel eine permanente Weiterleitung einrichten:
 
-Beim DNS-Anbieter von `bonanno-consulting.com` diese Records setzen:
+```txt
+Quelle: bonanno-consulting.com
+Ziel:   https://cc-cbonanno.github.io/wint-global/
+Typ:    301 permanent
+```
+
+Falls Wint eine `.htaccess`-Datei im Webspace verwendet, den Inhalt aus `redirect/.htaccess` in den Document Root von `bonanno-consulting.com` hochladen.
+
+Falls nur eine HTML-Weiterleitung möglich ist, `redirect/index.html` hochladen.
+
+Falls ein eigener Nginx-Serverblock möglich ist, `redirect/nginx.conf` verwenden.
+
+## DNS-Alternative
+
+Wenn später doch DNS möglich ist, statt Weiterleitung diese Records setzen und in GitHub Pages wieder `bonanno-consulting.com` als Custom Domain eintragen:
 
 ```txt
 A     @     185.199.108.153
 A     @     185.199.109.153
 A     @     185.199.110.153
 A     @     185.199.111.153
-AAAA  @     2606:50c0:8000::153
-AAAA  @     2606:50c0:8001::153
-AAAA  @     2606:50c0:8002::153
-AAAA  @     2606:50c0:8003::153
 ```
-
-Optional für `www.bonanno-consulting.com`:
-
-```txt
-CNAME  www  DEIN-GITHUB-USER.github.io
-```
-
-## 5. HTTPS aktivieren
-
-Wenn GitHub die Domain erkannt hat:
-
-1. Wieder zu `Settings > Pages`
-2. `Enforce HTTPS` aktivieren
-
-DNS-Änderungen können einige Minuten bis 24 Stunden dauern.

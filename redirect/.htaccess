@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ https://cc-cbonanno.github.io/wint-global/$1 [R=301,L]

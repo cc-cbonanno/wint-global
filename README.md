@@ -9,34 +9,22 @@ Die Website ist für GitHub Pages vorbereitet.
 1. Repository auf GitHub erstellen.
 2. Diese Dateien in den Root des Repositorys pushen.
 3. In GitHub unter `Settings > Pages` die Quelle auf den gewünschten Branch setzen, zum Beispiel `main` und `/root`.
-4. Als Custom Domain `bonanno-consulting.com` eintragen.
-5. `Enforce HTTPS` aktivieren, sobald GitHub das Zertifikat bereitgestellt hat.
+4. Keine Custom Domain eintragen, wenn `bonanno-consulting.com` beim Hoster per Weiterleitung läuft.
 
-Die Datei `CNAME` setzt die Custom Domain automatisch auf:
-
-```txt
-bonanno-consulting.com
-```
-
-## DNS für bonanno-consulting.com
-
-Für die Apex-Domain `bonanno-consulting.com` beim DNS-Anbieter folgende GitHub-Pages-Records setzen:
+Die GitHub-Pages-Ziel-URL lautet:
 
 ```txt
-A     @     185.199.108.153
-A     @     185.199.109.153
-A     @     185.199.110.153
-A     @     185.199.111.153
-AAAA  @     2606:50c0:8000::153
-AAAA  @     2606:50c0:8001::153
-AAAA  @     2606:50c0:8002::153
-AAAA  @     2606:50c0:8003::153
+https://cc-cbonanno.github.io/wint-global/
 ```
 
-Optional für `www.bonanno-consulting.com`:
+## Weiterleitung von bonanno-consulting.com
+
+Beim Hoster für `bonanno-consulting.com` eine permanente Weiterleitung einrichten:
 
 ```txt
-CNAME  www  <github-user-or-org>.github.io
+Quelle: bonanno-consulting.com
+Ziel:   https://cc-cbonanno.github.io/wint-global/
+Typ:    301 permanent
 ```
 
-DNS-Änderungen können bis zu 24 Stunden dauern.
+Konfigurationsbeispiele liegen im Ordner `redirect/`.
